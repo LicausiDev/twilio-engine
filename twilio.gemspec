@@ -7,9 +7,9 @@ require "twilio/version"
 Gem::Specification.new do |s|
   s.name        = "twilio"
   s.version     = Twilio::VERSION
-  s.authors     = ["Awijeet Shandilya"]
-  s.email       = ["awijeet@rubyonrails4ror.com"]
-  s.homepage    = "http://rubyonrails4ror.com"
+  s.authors     = ["Matthew Licausi"]
+  s.email       = ["matthew@licausidev.net"]
+  s.homepage    = "http://clicktocall.licausidev.net"
   s.summary     = "Summary of Twilio."
   s.description = "It enables you to do click to call"
   s.license     = "MIT"
