@@ -1,3 +1,30 @@
-= Twilio
+= twilio-engine
 
-This project rocks and uses MIT-LICENSE.
+Quickly set up twilio integrations such as click to call.
+
+## Getting started
+
+Add the following to your gemfile:
+
+```ruby
+gem 'twilio-ruby'
+gem 'twilio-engine', :git => "https://github.com/LicausiDev/twilio-engine"
+```
+
+Run the bundle command to install.
+
+In your environment.rb file, specify the following:
+
+```ruby
+ACCOUNT_SID = 'AXXXXXXXXXXXXXXXXXXXXXX'
+ACCOUNT_TOKEN = 'YYYYYYYYYYYYYYYYYYYYYYYY'
+BASE_URL = "http://example.com/twilio/clicktocall/"
+TWILIO_NUMBER = "+11234567890"
+SERVICE_PROVIDER_NUMBER = "+11234567890"
+```
+
+Add the following to your routes.rb file:
+
+```ruby
+mount Twilio::Engine => "/twilio"
+```
