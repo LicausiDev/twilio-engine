@@ -20,7 +20,7 @@ module Twilio
           @client = Twilio::REST::Client.new(ACCOUNT_SID, ACCOUNT_TOKEN)
           @client.account.calls.create data
  
-          redirect_to :action => 'index', 'msg' => "We are calling you at #{params['number']}..."
+          redirect_to REDIRECT_URL, 'msg' => "We are calling you at #{params['number']}..."
     end
 
     def initiate_conference

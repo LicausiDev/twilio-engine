@@ -1,6 +1,6 @@
 xml.instruct!
 xml.Response do
-    xml.Say "Hold please."
+    xml.Say "Please hold while you are connected."
     xml.Dial @number
 
 end
